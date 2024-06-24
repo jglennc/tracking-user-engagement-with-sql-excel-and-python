@@ -190,14 +190,16 @@ dataset example (minutes_watched_2022_paid_1.csv):
 ## [Part 8: Data Prediction with Python](./data-prediction-with-python.ipynb)
 
 ### Creating a Linear Regression
-    
+
+* This linear regression aims to examine the causal relationship between "minutes watched" vs "certificates issued" 
+
 * I split the data into train and tests sets with a test size of 20%.
 
 * $R^2 = 0.305$, Conclusion: 
 
     The value we obtained is approximately 0.305. This suggests that about 30% of the variability in the target variable (the number of certificates issued) is explained by the input variable (the number of minutes watched). This model does not account for the other 70%.
 
-    An R-squared value of 0.305 is not a bad result, but, as we mentioned, it implies that other factors also play a role in the number of certificates issued. Let’s list them one by one.
+    An R-squared value of 0.305 is not a bad result, but, it implies that other factors also play a role in the number of certificates issued. Let’s list them one by one.
 
     - One such factor, for example, includes different courses with different lengths. Therefore, a student passing three short courses will be issued three certificates, while a student passing one long course—roughly the length of three short ones—will be given only one certificate.
     - Another factor could be that some students pass exams without watching the courses. The reason could be that they are familiar with the subject and only aim for a document proving their proficiency.
